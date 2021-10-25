@@ -1,0 +1,65 @@
+Show version: git --version
+tạo một repository mới: git init 
+git config --list
+Repo chứa files, history, config quản lý bởi GIT
+Branches: time line with commits, master is the main
+Head: Pointer to last commit on branch
+Remote: GitHub, Gitlab
+---------------------------
+Set up remote repo (GITHUB):
+Tạo repo trên github -> get link 
+git remote add origin  https://github.com/tinhbt/Ansible.git
+(với origin là tên repo remote)
+Push lên remote: 
+git push origin document (push lên repo origin nhánh document)
+--------------
+##Configuration Commands
+##Git Configuration Commands
+#Git Config (Global/User-level) Syntax
+git config --global setting value
+#Configure User and Email
+#General Syntax:
+git config --global user.name "Your Name"
+git config --global user.email "you@someplace.com"
+#Example using course author's information:
+git config --global user.name "Jason Taylor"
+git config --global user.email "jason@jasongtaylor.com"
+----------------------------------
+#Listing All Global Configuration Settings
+git config --global --list
+#Seeing Git's User-based Config file
+cat ~/.gitconfig
+----------------
+###Git First Commit Commands
+###Lecture Command Listing
+--------------------------------
+FLOW: add (staging) -> commit (commit added files) -> push (upload to server)
+#Git Status
+git status
+Shows which files have been modified in the working directory vs Git's staging area.
+-------------------------------
+#Git Add
+git add file-name
+Adds the new or newly modified file-name to Git's staging area (index).
+-------------------------------
+#Git Commit
+git commit -m "A really good commit message"
+Commits all files currently in Git's staging area. The -m parameter allows for a commit message directly from the command line.
+-------------------------------
+Git Push: đẩy lên server những file đã commit
+-------------------------------
+#Clear!
+clear
+Clears all previous commands from the terminal screen -- just a bit of clean up.
+------------------
+git add . : add tất cả file
+-----------------------------------
+git reset HEAD: unstaging các file đã add
+------------------------------------------
+#Để clone 1 repository có sẵn ở trên máy cục bộ, bạn hãy sử dụng dòng lệnh sau:
+git clone /đường-dẫn-đến/repository/
+#Nếu repository đó ở máy chủ khác thì bạn hãy gõ dòng lệnh sau:
+git clone https://github.com/VOpenStack/OpenStack-Installation-Doc.git
+----------------------------------------
+git branch -a: list các branch
+git checkout -b document: tạo branch document
