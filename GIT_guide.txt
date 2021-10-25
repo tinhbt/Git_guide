@@ -6,6 +6,9 @@ Branches: time line with commits, master is the main
 Head: Pointer to last commit on branch
 Remote: GitHub, Gitlab
 ---------------------------
+undo commit:
+git reset --hard HEAD
+--------------------
 Set up remote repo (GITHUB):
 Tạo repo trên github -> get link 
 git remote add origin  https://github.com/tinhbt/Ansible.git
@@ -46,7 +49,7 @@ Adds the new or newly modified file-name to Git's staging area (index).
 git commit -m "A really good commit message"
 Commits all files currently in Git's staging area. The -m parameter allows for a commit message directly from the command line.
 -------------------------------
-Git Push: đẩy lên server những file đã commit
+##Git Push: đẩy lên server những file đã commit
 -------------------------------
 #Clear!
 clear
